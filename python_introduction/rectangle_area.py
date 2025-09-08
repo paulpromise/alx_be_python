@@ -13,5 +13,5 @@ For simplicity, let’s use length = 10 and width = 5.
 length = 10 
 width = 5
 
-Area = length * width
-print(f"The area of the rectangle is: {Area }")
+area = length * width
+print(f"The area of the rectangle is: {area }")
