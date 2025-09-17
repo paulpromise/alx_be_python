@@ -1,8 +1,8 @@
 #Use the case to write a calculator that performs different operations based on user input.
 
 
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
+num1 = float(input("Enter the first number: ").strip())
+num2 = float(input("Enter the second number: ").strip())
 operation = input("Choose the operation (+, -, *, /): ").strip().lower()
 match operation:
     case "+":
