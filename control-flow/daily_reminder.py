@@ -1,6 +1,6 @@
 Task = input("Enter your task: ")
 
-Priority = int(input("Priority ('high', 'medium', 'low') : "))
+Priority = int(input("Priority (high/medium/low): "))
 
 
 Time_Bound = input("Is it time-bound? (yes/no): ").strip().lower() == "yes"
@@ -25,7 +25,7 @@ match Priority:
             print(
                 "Reminder: 'Prepare presentation' is a medium priority task. Please complete it when you can."
             )
-            
+
     case "low":
         if Time_Bound == "yes":
             print(
