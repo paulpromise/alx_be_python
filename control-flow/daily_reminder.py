@@ -1,12 +1,12 @@
 Task = input("Enter your task: ")
 
-priority = int(input("Priority ('High', 'Medium', 'Low') : "))
+Priority = int(input("Priority ('high', 'medium', 'low') : "))
 
 
 Time_Bound = input("Is it time-bound? (yes/no): ").strip().lower() == "yes"
 
-match priority:
-    case "High":
+match Priority:
+    case "high":
         if Time_Bound == "yes":
             print(
                 "Reminder: 'Finish project report' is a high priority task that requires immediate attention today!"
@@ -16,7 +16,7 @@ match priority:
                 "Reminder: 'Finish project report' is a high priority task. Please complete it as soon as possible."
             )
 
-    case "Medium":
+    case "medium":
         if Time_Bound == "yes":
             print(
                 "Reminder: 'Prepare presentation' is a medium priority task that needs to be done this week!"
@@ -26,7 +26,7 @@ match priority:
                 "Reminder: 'Prepare presentation' is a medium priority task. Please complete it when you can."
             )
             
-    case "Low":
+    case "low":
         if Time_Bound == "yes":
             print(
                 "Reminder: 'Read a book' is a low priority task that can be done anytime."
