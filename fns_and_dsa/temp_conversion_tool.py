@@ -18,14 +18,18 @@ if __name__ == "__main__":
     print("=== Temperature Conversion Tool ===")
     try:
         # Ask user for temperature
-        temp_input = input("Enter the temperature value: ").strip()
+        temp_input = input("Enter the temperature to convert: ").strip()
         if not temp_input.replace(".", "", 1).lstrip("-").isdigit():
             raise ValueError("Invalid temperature. Please enter a numeric value.")
 
         temp_value = float(temp_input)
 
         # Ask user for unit type
-        unit = input("Is this in Celsius or Fahrenheit? (C/F): ").strip().upper()
+        unit = (
+            input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
+            .strip()
+            .upper()
+        )
 
         if unit == "C":
             result = convert_to_fahrenheit(temp_value)
