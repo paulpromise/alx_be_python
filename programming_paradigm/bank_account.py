@@ -12,7 +12,6 @@ class BankAccount:
             return False
         else:
             self.account_balance -= amount
-            print(f"Withdrew: ${amount}")
             return True
 
     def display_balance(self):
